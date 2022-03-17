@@ -19,7 +19,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="{{ asset('pullo/css/responsive.css')}}">
       <!-- fevicon -->
-      <link rel="icon" href="{{ asset('pullo/images/fevicon.png')}}" type="{{ asset('pullo/image/gif')}}" />
+      <link rel="icon" href="{{ asset('pullo/images/fevicon.png')}}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="{{ asset('pullo/css/jquery.mCustomScrollbar.min.css')}}">
       <!-- Tweaks for older IEs-->
