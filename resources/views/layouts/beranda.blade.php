@@ -375,6 +375,39 @@
     	</div>
     </div>
    	<!-- New Arrivals section end -->
+	   <div class="pegawai-box-main">
+		<h1 class="new_text"><strong>Data Pegawai</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Address</th>
+                                    <th>Telp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($pgw as $b)
+                                    <tr>
+                                        <td>{{ $b->id }}</td>
+                                        <td>{{ $b->name }}</td>
+                                        <td>{{ $b->gender }}</td>
+                                        <td>{{ $b->address }}</td>
+                                        <td>{{ $b->telp }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
    	<!-- contact section start -->
     <div class="layout_padding contact_section">
     	<div class="container">

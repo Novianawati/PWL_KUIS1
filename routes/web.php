@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\shoesController;
+use App\Http\Controllers\PegawaiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 });
 
@@ -34,3 +36,5 @@ Route::get('/collection', function () {
 Route::get('/racingshoes', function () {
     return view('racingshoes');
 });
+
+Route::get('/pegawai', [PegawaiController::class, 'pg']);
