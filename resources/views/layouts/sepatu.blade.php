@@ -202,6 +202,37 @@
     	</div>
     </div>
    	<!-- New Arrivals section end -->
+	   <div class="barang-box-main">
+		<h1 class="new_text"><strong>Data Barang</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nama</th>
+                                    <th>Deskripsi</th>
+                                    <th>Harga</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($brg as $x)
+                                    <tr>
+                                        <td>{{ $x->id }}</td>
+                                        <td>{{ $x->nama }}</td>
+                                        <td>{{ $x->deskripsi }}</td>
+                                        <td>{{ $x->harga }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!-- section footer start -->
     <div class="section_footer">
     	<div class="container">
