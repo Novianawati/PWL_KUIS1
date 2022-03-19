@@ -17,12 +17,20 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::prefix('/collection')->group(function(){
-    Route::get('/', function(){
-
-    });
+Route::get('/shoes', function(){
+    return view('shoes');
+    Route::get('/bestshoes', [shoesController::class, 's1']);
+    Route::get('/sportshoes', [shoesController::class, 's2']);
 });
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::get('/collection', function () {
+    return view('collection');
+});
+
+Route::get('/racingshoes', function () {
+    return view('racingshoes');
 });
