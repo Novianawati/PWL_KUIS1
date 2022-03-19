@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PegawaiSeeder::class);
         $this->call(TablesupplierSeeder::class);
         $this->call(BarangSeeder::class);
+        $this->call(PelangganSeeder::class);
     }
 }

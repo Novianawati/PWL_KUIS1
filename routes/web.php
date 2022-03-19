@@ -5,6 +5,7 @@ use App\Http\Controllers\shoesController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\TablesupplierController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\PelangganController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,3 +44,4 @@ Route::get('/pegawai', [PegawaiController::class, 'pg']);
 Route::get('/supplier', [TablesupplierController::class, 's']);
 
 Route::get('/barang', [BarangController::class, 'br']);
+Route::get('/pelanggan', [PelangganController::class, 'pl']);

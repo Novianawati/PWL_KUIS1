@@ -89,6 +89,37 @@
     </div>
     </div>
 	<!-- new collection section end -->
+	<div class="pelanggan-box-main">
+		<h1 class="new_text"><strong>Data Pelanggan</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nama</th>
+                                    <th>Alamat</th>
+                                    <th>NoHp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($plg as $x)
+                                    <tr>
+                                        <td>{{ $x->id }}</td>
+                                        <td>{{ $x->nama }}</td>
+                                        <td>{{ $x->alamat }}</td>
+                                        <td>{{ $x->noHp }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!-- section footer start -->
     <div class="section_footer">
     	<div class="container">
