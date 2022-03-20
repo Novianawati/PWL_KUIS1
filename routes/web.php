@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\shoesController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\TablesupplierController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,4 @@ Route::get('/racingshoes', function () {
 });
 
 Route::get('/pegawai', [PegawaiController::class, 'pg']);
+Route::get('/supplier', [TablesupplierController::class, 's']);

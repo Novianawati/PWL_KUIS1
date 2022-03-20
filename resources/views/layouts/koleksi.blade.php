@@ -109,6 +109,37 @@
     	</div>
     </div>
 	<!-- new collection section end -->
+	<div class="supplier-box-main">
+		<h1 class="new_text"><strong>Data Supplier</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name Supplier</th>
+                                    <th>Address</th>
+                                    <th>Telp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($supp as $b)
+                                    <tr>
+                                        <td>{{ $b->id }}</td>
+                                        <td>{{ $b->namesupplier }}</td>
+                                        <td>{{ $b->address }}</td>
+                                        <td>{{ $b->telp }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!-- section footer start -->
     <div class="section_footer">
     	<div class="container">
